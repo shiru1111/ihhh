@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my gorjus bb</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #60A3D9
+        }
+
+        #content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        #sentence {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333; 
+        }
+
+        #nextButton,
+        #backButton,
+        #nextButton2,
+        #nextButton3,
+        #nextButton4,
+        #nextButton5,
+        #nextButton6 {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #nextButton {
+            background-color: #3498db; 
+            color: white;
+        }
+
+        #nextButton2,
+        #nextButton3,
+        #nextButton4,
+        #nextButton5,
+        #nextButton6 {
+            background-color: #2980b9; 
+            color: white;
+            display: none; 
+        }
+
+        #backButton {
+            background-color: #c0392b; 
+            color: white;
+            display: none; 
+        }
+
+        @media only screen and (max-width: 600px) {
+        
+            #content {
+                width: 90%;
+            }
+
+            #nextButton,
+            #backButton,
+            #nextButton2,
+            #nextButton3,
+            #nextButton4,
+            #nextButton5,
+            #nextButton6 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <img id="myImage" src="gif1.gif" alt="for my lovey">
+    <div id="sentence">It's been a while mahal, right?</div>
+    <button id="nextButton" onclick="changeContent()">Next</button>
+    <button id="nextButton2" onclick="changeContent2()">Next</button>
+    <button id="nextButton3" onclick="changeContent3()">Next</button>
+    <button id="nextButton4" onclick="changeContent4()">Next</button>
+    <button id="nextButton5" onclick="changeContent5()">Next</button>
+    <button id="nextButton6" onclick="changeContent6()">Next</button>
+    <button id="backButton" onclick="goBack()">Back</button>
+</div>
+
+<script>
+    function changeContent() {
+        document.getElementById("sentence").innerText = "This is for you, so listen, oki?";
+        document.getElementById("myImage").src = "gif2.gif";
+        document.getElementById("nextButton").style.display = "none";
+        document.getElementById("nextButton2").style.display = "inline-block";
+        document.getElementById("backButton").style.display = "inline-block";
+    }
+
+    function changeContent2() {
+        document.getElementById("sentence").innerText = "Happy Valentine's mahalll! This day means a lot to me, of course! It's the day of hearts, a time for our love noh!";
+        document.getElementById("nextButton2").style.display = "none";
+        document.getElementById("nextButton3").style.display = "inline-block";
+    }
+
+    function changeContent3() {
+        document.getElementById("sentence").innerText = "Let's celebrate the good times we've had, the laughs we've shared, the problems we've solved, and our love that keeps growing and bigger";
+        document.getElementById("nextButton3").style.display = "none";
+        document.getElementById("nextButton4").style.display = "inline-block";
+    }
+
+    function changeContent4() {
+        document.getElementById("sentence").innerText = "Salamat love for making me happy always, yung mga gabing I need to laugh while my mouth is closed dahil gabi na NYAHAHAHAHA, walang sawang tawa and kulitan, and u make me so comfortable with you to the point na hindi ko ineexpect lahat, salamat sa pag-intindi and tbh u never disappoint me :) alam mo kaligayahan ko";
+        document.getElementById("nextButton4").style.display = "none";
+        document.getElementById("nextButton5").style.display = "inline-block";
+    }
+
+    function changeContent5() {
+        document.getElementById("sentence").innerText = "Sorry minsan sa ugali q, sa mood q, and don't worry I still have my progress for myself and for us. Don't hide anything to me oki? If I hurt you na, let me know because hurting you, especially knowing that it's because of me, hurts me even more. Your pain echoes through the silence, haunting the corners of my mind";
+        document.getElementById("nextButton5").style.display = "none";
+        document.getElementById("nextButton6").style.display = "inline-block";
+    }
+
+    function changeContent6() {
+        document.getElementById("sentence").innerText = "Don't change okay? If ever man na may need baguhin ayun ay to be better for you and for us oki? Happy Valentines again! I love youuuuu forever and alwayss!!";
+        document.getElementById("myImage").src = "gif3.gif";
+        document.getElementById("nextButton6").style.display = "none";
+    }
+
+    function goBack() {
+        document.getElementById("sentence").innerText = "It's been a while, loveyy";
+        document.getElementById("myImage").src = "gif2.gif";
+        document.getElementById("nextButton").style.display = "inline-block";
+        document.getElementById("nextButton2").style.display = "none";
+        document.getElementById("nextButton3").style.display = "none";
+        document.getElementById("nextButton4").style.display = "none";
+        document.getElementById("nextButton5").style.display = "none";
+        document.getElementById("nextButton6").style.display = "none";
+        document.getElementById("backButton").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
